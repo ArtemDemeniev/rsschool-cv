@@ -18,10 +18,7 @@ body{
     flex-direction: column;
 }
 .header{
-    min-height: 12rem;
-    background-color:rgba(44, 44, 44, 60%);
-    backdrop-filter: blur(11%);
-    width: 100%;
+    
 }
 .container{
     max-width: 1140px;
@@ -36,14 +33,24 @@ body{
     width: 44.5rem;
     height: 72rem;
 }
+.mph{
+    position: relative;
+}
+.oval-round{
+    position: absolute;
+    left: -15%;
+    bottom: 40px;
+
+}
 .flex{
     display: flex;
-    justify-content: space-between;
-    height: 12rem;
+    justify-content: flex-end;
+    height: 8rem;
     align-items: center;
     position: relative;
     margin-bottom: 3rem;
 }
+
 .nav{
     width: 75%;
     z-index: 3;
@@ -62,15 +69,25 @@ color:#4EE1A0;
 }
 .welcome{
     min-height: 47rem;
+    position: relative;
+    z-index: 1
 }
 .welcome__wrapper{
     position: relative;
 }
+.decoration{
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    z-index: 999;
+    padding: 0 1.5rem;
+}
+
 .welcome__title {
     margin-top: 7rem;
 }
-.welcome__wrapper:after {
-}
+
+
 .welcome__header {
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -132,17 +149,11 @@ color:#4EE1A0;
     bottom: 0;
     left: 0; 
 }
-.welcome__decor{
-}
 .contacts {
     min-height: 90vh;
-    margin-top: 10rem;
     
-}
-.container {
 }
 .contacts__block {
-    
 }
 .contacts__title {
     text-align: center;
@@ -179,8 +190,8 @@ color:#4EE1A0;
     padding: 10rem;
     text-align: center;
     border: 1px solid #2C2C2C;
-    border-top: none;
-    border-bottom: none;
+    
+    
 }
 .contacts__menu {
 }
@@ -193,7 +204,7 @@ color:#4EE1A0;
 }
 .about-me {
     min-height: 90vh;
-    margin-top: 7rem;
+    margin-top: 10rem;
 }
 
 .about-me__title {
@@ -273,6 +284,15 @@ color:#4EE1A0;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.skills__header {
+    position: relative;
+}
+.decoration2 {
+    position: absolute;
+    right: -30%;
+    bottom: 320%;
 }
 .skills__wrapper {
 }
@@ -423,6 +443,7 @@ transform: scale(2.1);
 .education {
     margin-top: 8rem;
     min-height: 90vh;
+    background-color: rgb(15, 15, 15);
 
 }
 .education__title {
@@ -439,7 +460,7 @@ transform: scale(2.1);
 }
 .education__title:after{
     content:'';
-    width: 63%;
+    width: 27%;
     margin: 0 50%;
     transform: translate(-50%);
     height: 0.3rem;
@@ -447,56 +468,74 @@ transform: scale(2.1);
     position: absolute;
     bottom: 0;
     left: 0;
-    
 }
+.footer{
+    position: relative;
+}
+.margin{
+    margin-top: 6rem;
+}
+
+.decoration{
+        stroke-dasharray: 100%;
+        stroke-dasharray: 0 100;
+        fill: none;
+        stroke: rgb(255, 255, 255);
+        stroke-width: 1px;
+        animation: progress 3s linear forwards;     
+}
+@keyframes progress {
+    from {
+    stroke-dasharray: 100%;
+    }
+    to {
+    stroke-dasharray: 300%;
+    }
+}
+.decoration2{
+    stroke-dasharray: 100%;
+    stroke-dasharray: 100 0;
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+    animation: progress 3s linear forwards;     
+}
+@keyframes progress {
+from {
+stroke-dasharray: 100%;
+}
+to {
+stroke-dasharray: 300%;
+}
+}
+
 .education__wrapper {
     display: flex;
-    margin-top: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.education__wrapper li{
+    padding: 2rem 0;
+    margin-left: ;
+}
+.education__wrapper li a{
+    margin-left: 3rem;
+}
+.education__wrapper li p{
+    margin-left: 7rem;
+}
+.education__where {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
     
 }
-.background-image {
-    display: flex;
-}
-.education__img {
-    height: 35rem;
-}
-.education__univercity {
+.eng-level {
     display: flex;
     flex-direction: column;
-    
 }
 
-.education__list {
-    width: 70%;
-}
-.education__item p{
-    margin-left: 2rem;
-    font-size: 16px;
-    margin-top: 2rem;
-}
-.kstuca {
-    display: block;
-    margin-left: 2rem;
-    
-}
-.logo-kstuca{
-    width: 5rem;
-
-}
-.univer{
-    margin:0 0 4rem 2rem;
-    color: #FFFFFF;
-    font-weight: 700;
-    letter-spacing: 2px;
-    
-    
-}
-.eng-level .eng{
-    flex-direction: column;
-    color: #FFFFFF;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.eng{
-    margin-bottom: 4rem;
+.books-icon {
+    width: 4rem;
+    ;
 }
