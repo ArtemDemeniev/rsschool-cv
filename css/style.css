@@ -463,7 +463,7 @@ transform: scale(1.5);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0 0 30% 0;
+    border-radius: 0 0 50% 0;
     color: #fff;
 }
 .education__title {
@@ -553,4 +553,33 @@ transform: scale(1.5);
 .a2{
     margin-left: 5rem;
     color: white;
+}
+.footer {
+    min-height: 12rem;
+}
+.footer__logo {
+
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem
+    
+}
+.school-logo {
+    width: 10rem;
+    height: auto;
+}
+.footer__copyright {
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:rgb(123, 123, 123)
+
+}
+.footer__text {
+}
+.github-logo {
+    width: 8rem;
 }
