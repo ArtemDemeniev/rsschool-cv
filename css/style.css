@@ -211,6 +211,7 @@ color:#4EE1A0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .about-me__title {
     text-align: center;
@@ -299,7 +300,7 @@ color:#4EE1A0;
 .skills__item {
     display: flex;
     width: 33%;
-    padding: 5rem;
+    padding: 10rem;
     flex-direction: column;
     align-items:center;
     transition: 0.5s;
@@ -489,9 +490,7 @@ transform: scale(1.5);
     bottom: 0;
     left: 0;
 }
-.footer{
-    position: relative;
-}
+
 .decoration{
     stroke-dasharray: 100%;
     stroke-dasharray: 0 100;
@@ -512,26 +511,46 @@ transform: scale(1.5);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-}
-.education__wrapper li{
-    padding: 1rem 0;
-}
-.education__wrapper li a{
-    margin-left: 3rem;
-}
-.education__wrapper li p{
-    margin-left: 7rem;
 }
 .education__where {
     flex-direction: column;
     display: flex;
     width: 50%;
 }
-.eng-level {
-    display: flex;
-    flex-direction: column;
+.education__where li{
+    padding: 1rem 0;
+}
+.education__where li a{
+    margin-left: 3rem;
+    transition: .3s ease-in;
+    
+}
+.education__where li a:hover{
+    color: #4EE1A0;
+}
+.education__where li p{
+    margin-left: 7rem;
+    color:rgb(249, 249, 249);
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 .books-icon {
     width: 4rem;
+}
+.footer{
+    position: relative;
+}
+.ed-wr{
+    display: flex;
+    justify-content: space-between;
+}
+.uk-flag{
+    width: 4rem;
+    position: relative;
+    bottom: 0.5rem;
+    right: 3rem;
+}
+.a2{
+    margin-left: 5rem;
+    color: white;
 }
