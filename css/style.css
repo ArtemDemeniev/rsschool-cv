@@ -64,9 +64,11 @@ body{
 .menu{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .menu__link{
 transition: 0.3s ease-in;
+
 }
 .menu__link:hover{
 color:#4EE1A0;
@@ -90,6 +92,8 @@ color:#4EE1A0;
 
 .welcome__title {
     margin-top: 7rem;
+    max-width: 85rem;
+    padding: 0 1.5rem;
 }
 
 
@@ -202,8 +206,8 @@ color:#4EE1A0;
     color:#4EE1A0;
 }
 .about-me {
-    padding-top: 4rem;
-    min-height: 50vh;
+    padding: 4rem 1.5rem;
+    min-height: 50rem;
     margin-top: 7rem;
     background: url('../accets/img/pave.jpg');
     width: 100% ;
@@ -363,7 +367,6 @@ color:#4EE1A0;
     position: absolute;
     right: -81%;
     bottom: 38%;
-    overflow-x: hidden;
 }
 .lines{
     position: absolute;
@@ -456,7 +459,7 @@ color:#4EE1A0;
 transform: scale(1.5);
 }
 .education {
-    min-height: 60vh;
+    min-height: 50rem;
     background-color: rgb(15, 15, 15);
     background: url('../accets/img/debby-hudson-asviIGR3CPE-unsplash.jpg');
     width: 100% ;
@@ -465,6 +468,7 @@ transform: scale(1.5);
     background-size: cover;
     border-radius: 0 0 50% 0;
     color: #fff;
+    padding: 1.5rem 1.5rem;
 }
 .education__title {
     text-align: center;
@@ -570,12 +574,14 @@ transform: scale(1.5);
 .school-logo {
     width: 10rem;
     height: auto;
+
 }
 .footer__copyright {
     font-weight: 100;
     font-size: 16px;
     letter-spacing: 2px;
     color:rgb(123, 123, 123)
+
 
 }
 .footer__text {
